@@ -35,27 +35,31 @@ grid-template-rows: auto auto auto;
 grid-gap: 50px 50px;
 }
 
-.fathers{
+#fathers{
 grid-column: 1;
 grid-row: 1;
 }
 
-.jose{
+#jose{
  grid-column: 2;
  grid-row: 1;
 }
 
-.cayetano{
+#cayetano{
  grid-column: 3;
  grid-row: 1;
 }
 
-.founders{
+#founders{
 	grid-column:2;
 	grid-row: 2;}
 .iframe{
 	grid-column:2;
 	grid-row:3;
+}
+
+.grid-pic{
+	justify-content: center;
 }
 
 /*Make the h2 heading match h1*/
