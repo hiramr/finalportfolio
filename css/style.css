@@ -28,6 +28,12 @@ img{
 .ifile{animation-name: appear;
 	animation-duration: 5s;}
 
+.grid-container{
+display: grid;
+grid-template-columns: auto auto auto;
+}
+
+
 /*Make the h2 heading match h1*/
 h2{
 	font-size: 2em; 
