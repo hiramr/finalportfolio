@@ -25,6 +25,9 @@ img{
 	animation-duration: 5s;
 }
 
+.ifile{animation-name: appear;
+	animation-duration: 5s;}
+
 /*Make the h2 heading match h1*/
 h2{
 	font-size: 2em; 
