@@ -30,8 +30,8 @@ img{
 	
 .grid-container{
 display: grid;
-grid-template-columns: 250px 250px 250px;
-grid-template-rows: auto auto auto;
+grid-template-columns: 250px;
+grid-template-rows: auto auto auto auto auto auto auto;
 grid-gap: 50px 50px;
 }
 
@@ -41,21 +41,21 @@ grid-row: 1;
 }
 
 #jose{
- grid-column: 2;
- grid-row: 1;
+ grid-column: 1;
+ grid-row: 2;
 }
 
 #cayetano{
- grid-column: 3;
- grid-row: 1;
+ grid-column: 1;
+ grid-row: 3;
 }
 
 #founders{
-	grid-column:2;
-	grid-row: 2;}
+	grid-column:1;
+	grid-row: 4;}
 .iframe{
-	grid-column:2;
-	grid-row:3;
+	grid-column:1;
+	grid-row:5;
 }
 
 .grid-pic{
@@ -115,4 +115,36 @@ nav li:hover{
 /*Added this so the links stay the same color*/
 a:visited{color:white}
 
-@media screen and (min-width: 850px){}
+@media screen and (min-width: 850px){.grid-container{
+display: grid;
+grid-template-columns: 250px 250px 250px;
+grid-template-rows: auto auto auto;
+grid-gap: 50px 50px;
+}
+
+#fathers{
+grid-column: 1;
+grid-row: 1;
+}
+
+#jose{
+ grid-column: 2;
+ grid-row: 1;
+}
+
+#cayetano{
+ grid-column: 3;
+ grid-row: 1;
+}
+
+#founders{
+	grid-column:2;
+	grid-row: 2;}
+.iframe{
+	grid-column:2;
+	grid-row:3;
+}
+
+.grid-pic{
+	justify-content: center;
+}}
