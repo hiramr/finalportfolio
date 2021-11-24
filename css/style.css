@@ -50,6 +50,14 @@ grid-row: 1;
  grid-row: 1;
 }
 
+.founders{
+	grid-column:2;
+	grid-row: 2;}
+.iframe{
+	grid-column:2;
+	grid-row:3;
+}
+
 /*Make the h2 heading match h1*/
 h2{
 	font-size: 2em; 
