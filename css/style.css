@@ -40,6 +40,15 @@ grid-column: 1;
 grid-row: 1;
 }
 
+.jose{
+ grid-column: 2;
+ grid-row: 1;
+}
+
+.cayetano{
+ grid-column: 3;
+ grid-row: 1;
+}
 
 /*Make the h2 heading match h1*/
 h2{
