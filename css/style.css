@@ -1,11 +1,25 @@
+/*------------------SKIP TO CONTENT--------------------*/
+.skip-to-content{
+	bottom: 97%;
+	position: absolute;
+	transform: translateY(-100%);
+	transition: transform 0.3s;
+}
+
+.skip-to-content:focus{
+	background-color: #512D1E;
+	color: white;	
+	transform: translateY(0%);
+}
+/*-----------------TOP IMAGE-------------------------------*/
 #fullname{
-	max-width: 100%;
-	height: 250px;
+	width: 500px;
+	height: auto;
 	animation-name: appear;
 	animation-duration: 5s;
 	margin: 0%;
 }
-
+/*----------------ALIGNS NAV BAR AND IMAGE------------------*/
 header{
 	display: flex;
 	flex-direction: column;
@@ -18,13 +32,15 @@ nav{
 	border: 2px solid black;
 	padding: 10px;
 	margin: 0%;
-}
-
-a{
 	text-decoration: none;
 }
-/*Change the styling for all of the list 
-items in the nav section*/
+
+/*----------REMOVES STYLE THAT ONLY CURRENT PAGE SHOULD HAVE----------*/
+a{
+	text-decoration: none; 
+}
+
+/*-----------ADDS LIGHT BROWN BOX IN TABS-------------------------*/	
 nav li{
 	background-color: #512D1E;
 	padding:10px;
@@ -34,45 +50,39 @@ nav li{
 	color: white;
 }
 
+/* -----------WHEN HOVERING CHANGES COLOR----------------*/
 nav li:hover{
 	background-color: #8D633A;
 }
 
-/* When clicking changes color*/
+/* -----------WHEN CLICKING CHANGES COLOR----------------*/
 nav a:focus{
 	color: yellow;
 }
 
-/* Shows what is the current page*/
+/* ------------Shows what is the current page----------------*/
 #current_page{
 	font-weight: bold;
 	text-decoration: underline;
-	font-size: 105%;
+	font-size: 110%;
 	background-color: #8D633A;
-	font-family: "montserrat", sans-serif;
+	font-weight: bolder;
 }
 
 body{
 	margin:1%;
 	padding:1%;
 	font-size:200%;
+}
+/*------------------PARALLAX SCROLLING EFFECT----------------------*/
+#main{
 	background-image: url("../imgs/crest.png");
 	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: center;
-	background-size: cover;
+	background-position: center;
+	background-size: 45%;
+	background-attachment: fixed;
 }
-
-
 /*Make the h1 heading bigger with a bold font*/
-h1{
-	font-size: 2em; 
-	font-weight: bold;
-}
-h2{
-	font-size: 2em; 
-	font-weight: bold;
-}
 
 .container{
 	border: 2px solid grey;
@@ -86,6 +96,15 @@ h2{
 	grid-gap: 50px 50px;
 	justify-content: center;
 }
+
+.grid-container-abtus{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto auto auto;
+	grid-gap: 50px 50px;
+	justify-content: center;
+}
+
 .grid-item{
 	display: flex;
 	flex-direction: column;
@@ -95,22 +114,22 @@ h2{
 
 p{
 	text-align: center;
-}
-p, h1, h2 {
 	padding: 10px;
 	letter-spacing: .5px;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
 }
 
-/*Add borders around the main components and some
-space too*/
-h1{
-	border: 2px solid grey;
-	margin: 10px 0;
+.header{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 2px solid black;
+	margin: 10px 10px;
+	font-size: 2em; 
+	font-weight: bold;
 }
 
 footer{
-	border: 2px solid grey;
+	border: 2px solid black;
 	margin: 10px 0;
 	background-color: #8D633A;
 	display: flex;
@@ -119,8 +138,29 @@ footer{
 	align-items: center;
 	margin: 0px;
 	font-size: 15%;
+	color: white;
 }
 
+.form{
+	display: grid;
+	grid-template-columns: 75%;
+	grid-template-rows:auto;
+	background-color: #8D633A;
+	color: white;
+	justify-content: center;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 75%;
+	border: black;
+	border-width: 10px;
+	padding: 10px;
+}
+
+input{
+	border: #512D1E;
+	border-width: 5px;
+}
 .date{
 	width: 50px;
 	height: auto;
@@ -129,8 +169,8 @@ footer{
 }
 /*Style the images*/
 img{
-    height: 250px;
-    width: 250px;
+    height: auto;
+    width: 400px;
     border: none;
     padding: 25px;
     border-radius: 10px;
@@ -138,7 +178,15 @@ img{
 	animation-name: appear;
 	animation-duration: 5s;
 }
-
+.handsign{
+	padding: 0%;
+}
+.hiram{
+	width: 100%;
+}
+#fathers, #founders{
+	width: 75%;
+}
 .caption{
 	text-align: center;
 	justify-content:center;
@@ -146,16 +194,22 @@ img{
 	width: auto;
 }
 
-#fathers{
-	width: 100%;
+
+iframe{
+	justify-content: center;
+	align-items: center;
+	margin:auto;
 }
 
-#iframe{
 
+
+#document{
+	justify-content: center;
 }
 
-
-
+.description{
+	font-size: 75%;
+}
 
 @keyframes appear{
     from{opacity: 0;
@@ -165,65 +219,52 @@ img{
   }
   @media (prefers-reduced-motion: reduce) {
     img{animation:none;}
+	#fullname{animation:none;}
+	#main{background-attachment: scroll;
+			background-size: cover;
+	}
   }
 
 /*Added this so the links stay the same color*/
+a:before{color: white;}
 a:visited{color:white;
 	text-decoration: none;
 }
+/*---------------------------------------------------DESKTOP---------------------------------------------------------------------------*/
 
 @media screen and (min-width: 850px){.grid-container{
 	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto auto;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto auto auto;
 	grid-gap: 50px 50px;
 	justify-content: center;
 	flex-direction: column;
 	}
 	
-	
-	.grid-item-3{
-	grid-column: 2;
-	grid-row: 1;
+	.row1{
+		display: inline-grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
 	}
-	
-	.grid-item-2{
-	 grid-column: 3;
-	 grid-row: 1;
+
+	#grid-item-fathers{
+		grid-row: 2;
+		grid-column:1;
 	}
-	
-	.grid-item-1{
-	 grid-column: 1;
-	 grid-row: 1;
-	}
-	
-	.grid-item-4{
-	 grid-column:2;
-	 grid-row: 2;
-	}
-	
-	.grid-item-5{
-		grid-column:2;
-		grid-row:3;
-		justify-content: center;
-		margin: auto;
-	}
-	.hiram{
-		justify-content: center;
-		align-items: center;
-		margin-left: auto;
-		margin-right: auto;
+
+	#grid-item-founders{
+		grid-row: 3;
+		grid-column: 1;
 	}
 	.grid-item.grid-pic{
 		justify-content: center;
 		margin: auto;
 		align-items: center;
 	}
-	#ifile{
+	#iframe{
 		display:list-item;
 		animation-name: appear;
 		animation-duration: 5s;
-		animation-iteration-count: infinite;
 		margin: auto;
 	}
 	nav li{
