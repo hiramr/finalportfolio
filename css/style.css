@@ -178,16 +178,7 @@ footer{
 }
 
 /*------------------IMAGE STYLE-----------------*/
-.ao{
-	width: 5%;
-	height: auto;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	padding-top: 10px;
-	margin: 0%;
-	border: none;
-}
+
 img{
     height: auto;
     width: auto;
