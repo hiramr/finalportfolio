@@ -28,56 +28,62 @@
 			<ul>
 				<li class = "link_item"><a href = "index.html" style="color: white;">About us</a></li>
 				<li class = "link_item"><a href = "personal.html" style="color: white;">History</a></li>
-				<li class = "link_item"><a href = "random.html" style="color: white;">Current Chapter</a></li>
+				<li class = "link_item"><a href = "currentchapter.html" style="color: white;">Current Chapter</a></li>
 				<li class = "link_item" id= "current_page"><a href = "aboutme.html" style="color: white;">Page creator</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main class = "container" id = "main">
-		<h1 class = "header">Hiram Rodriguez</h1>
-		<img src="imgs/hiram.JPG" type = "image/JPG" class="hiram"> 
-		<p>Hello! My name is Hiram Rodriguez. I am a  senior at the Univserity of Michigan studying BCN and information sciences at the school of information. This is my final portfolio for SI339. I decided to make a small webpage for my fraternity that can be used to show basic information.</p>
-		<div class = "survey">
-			<form class = "form" action="action_page.php" method="post">
-		  
-			  <label for="fname">First Name</label>
-			  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-		  
-			  <label for="lname">Last Name</label>
-			  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-			  
-			  <label for="number">Phone Number</label>
-			  <input type="text" id="number" name="number" placeholder="(xxx) xxx-xxxx">
-			  
-			  <label for="email">Email</label>
-			  <input type="text" id="email" name="email" placeholder="johndoe@domain.xxx">
+		<div class = "grid-container">
+			<h1 class = "header">Hiram Rodriguez</h1>
+			<img src="imgs/hiram.JPG" type = "image/JPG" class="hiram" alt = "hiram"> 
+			<p class= "paragraph">Hello, my name is Hiram Rodriguez. I am a  senior at the Univserity of Michigan studying Biopsychology, Cognition, and Nueroscience & Information Sciences with a minor in entreprenuership at the School of Information. This is my final portfolio for SI339 - Wedb Design, Development, and Accessibility. I decided to make a small webpage for my fraternity that can be used to show basic information and background. Thank you for stopping by on my page! Feel free to contact me by filling out the form or through my Linkedin.
+				 <br><br> <a id="pub" href= "https://www.linkedin.com/in/hiram-rodriguez-a6a38618a/">Linkedin</a>
+				 <a id="pub" href= "https://www.instagram.com/hirum_/">Instagram</a>
+				 <a id="pub" href= "https://github.com/hiramr?tab=repositories">Github</a>
+				</p>
+			<img src="imgs/resume.png" alt="resume">
+			 <div class = "survey">
+				<form class = "form" action="https://formspree.io/f/mgedeaov" method="post">
+			
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+				
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+					
+					<label for="number">Phone Number</label>
+					<input type="text" id="number" name="number" placeholder="(xxx) xxx-xxxx">
+					
+					<label for="email">Email</label>
+					<input type="text" id="email" name="email" placeholder="johndoe@domain.xxx">
 
-			  <label for="Method">Preferred Method of Communication</label>
-			  <select id="method" name="method">
-				<option value="phone">Phone Call (rates may still apply)</option>
-				<option value="email">Email</option>
-				<option value="text">Text Message</option>
-			  </select>
-			  
-			  <label for="reason">Reason for contact</label>
-			  <select id="reason" name="reason">
-				<option value="interest">Interested in Lambda Theta Phi</option>
-				<option value="personal">Personal Inquires</option>
-				<option value="Appointment">Booking Appointment</option>
-			  </select>
+					<label for="method">Preferred Method of Communication</label>
+					<select id="method" name="method">
+						<option value="phone">Phone Call (rates may still apply)</option>
+						<option value="email">Email</option>
+						<option value="text">Text Message</option>
+					</select>
+					
+					<label for="reason">Reason for contact</label>
+					<select id="reason" name="reason">
+						<option value="interest">Interested in Lambda Theta Phi</option>
+						<option value="personal">Personal Inquires</option>
+						<option value="Appointment">Booking Appointment</option>
+					</select>
 
-			  <label for="subject">Subject</label>
-			  <textarea id="subject" name="subject" placeholder="Write more information.." style="height:200px"></textarea>
-		  
-			  <input type="submit" value="Submit">
-		  
-			</form>
-		  </div>
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write more information.." style="height:200px"></textarea>
+				
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>  
 	</main>
 
 	<footer>
-		<img src = "imgs/1975.png" type = "img/png" alt = "1975" class = "date">
-		<p>Hiram Rodriguez SI 339 Final Portfolio 2021</p>
+		<img src = "imgs/1975.png" type = "img/png" alt = "alphaomicron" class = "ao">
+		<p class = "footer-text">Hiram Rodriguez SI 339 Final Portfolio 2021</p>
 	</footer>
 </body>
 </html>
