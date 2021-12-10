@@ -236,11 +236,12 @@ iframe{
 .pub{
 	border: 3px solid #512D1E;
 	padding: 3px;
-	color: white;
-	background-color: #8D633A;
+	color: #8D633A;
+	background-color: blanchedalmond;
 }
 
 .pub:hover{
+	border: 3px solid blanchedalmond;
 	background-color:#512D1E;
 	color: white;
 }
