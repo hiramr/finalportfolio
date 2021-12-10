@@ -18,6 +18,7 @@
 	animation-name: appear;
 	animation-duration: 5s;
 	margin: 0%;
+	border: none;
 }
 /*----------------ALIGNS NAV BAR AND IMAGE------------------*/
 header{
@@ -28,7 +29,7 @@ header{
 }
 
 nav{
-	background-color: #512D1E;
+	background-color: #411F1F;
 	border: 2px solid black;
 	padding: 10px;
 	margin: 0%;
@@ -37,9 +38,8 @@ nav{
 
 /*----------REMOVES STYLE THAT ONLY CURRENT PAGE SHOULD HAVE----------*/
 a{
-	text-decoration: none; 
+	text-decoration: none;
 }
-
 /*-----------ADDS LIGHT BROWN BOX IN TABS-------------------------*/	
 nav li{
 	background-color: #512D1E;
@@ -69,55 +69,57 @@ nav a:focus{
 	font-weight: bolder;
 }
 
+/*------------------BACKGROUND COLOR-----------------*/
 body{
 	margin:1%;
 	padding:1%;
-	font-size:200%;
+	background-color: blanchedalmond;
 }
 /*------------------PARALLAX SCROLLING EFFECT----------------------*/
 #main{
+	background-color: white;
 	background-image: url("../imgs/crest.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 45%;
 	background-attachment: fixed;
 }
-/*Make the h1 heading bigger with a bold font*/
+/*-----------------GRID STYLE-----------------*/
 
 .container{
 	border: 2px solid grey;
 	margin: 10px 0;
+	padding: 5px 0;
 }
 
 .grid-container{
 	display: grid;
-	grid-template-columns: 250px;
-	grid-template-rows: auto auto auto auto auto auto auto;
-	grid-gap: 50px 50px;
-	justify-content: center;
-}
-
-.grid-container-abtus{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto auto auto auto auto auto;
-	grid-gap: 50px 50px;
+	grid-template-columns: 90%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-gap: 10px 50px;
 	justify-content: center;
 }
 
 .grid-item{
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	max-height: auto;
 }
 
+/*------------------TEXT STYLE-----------------*/
 p{
 	text-align: center;
 	padding: 10px;
 	letter-spacing: .5px;
+	color: white;
+
 }
 
+.paragraph{
+	border: 2px solid black;
+	background-color: #8D633A;
+	color: white;
+	margin: 10px 10px;
+}
 .header{
 	justify-content: center;
 	align-items: center;
@@ -126,21 +128,40 @@ p{
 	margin: 10px 10px;
 	font-size: 2em; 
 	font-weight: bold;
+	color: white;
+	background-color: #643614;
 }
 
+/*------------------FOOTER-----------------*/
 footer{
 	border: 2px solid black;
 	margin: 10px 0;
-	background-color: #8D633A;
+	background-color: #512D1E;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 0px;
-	font-size: 15%;
+	font-size: 50%;
 	color: white;
 }
 
+.footer-text{
+	background-color: transparent;
+}
+/*------------------FOOTER IMAGE-----------------*/
+.ao{
+	width: 5%;
+	height: auto;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 10px;
+	margin: 0%;
+	border: none;
+}
+
+/*------------------CONTACT FORM-----------------*/
 .form{
 	display: grid;
 	grid-template-columns: 75%;
@@ -152,28 +173,26 @@ footer{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	width: 75%;
-	border: black;
-	border-width: 10px;
+	border: 20px inset #411F1F ;
 	padding: 10px;
 }
 
-input{
-	border: #512D1E;
-	border-width: 5px;
-}
-.date{
-	width: 50px;
+/*------------------IMAGE STYLE-----------------*/
+.ao{
+	width: 5%;
 	height: auto;
-	padding: 0%;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 10px;
 	margin: 0%;
+	border: none;
 }
-/*Style the images*/
 img{
     height: auto;
-    width: 400px;
-    border: none;
-    padding: 25px;
-    border-radius: 10px;
+    width: auto;
+    border: 20px inset #8D633A ;
+    padding: 0px;
     margin: auto;
 	animation-name: appear;
 	animation-duration: 5s;
@@ -181,9 +200,7 @@ img{
 .handsign{
 	padding: 0%;
 }
-.hiram{
-	width: 100%;
-}
+
 #fathers, #founders{
 	width: 75%;
 }
@@ -191,26 +208,38 @@ img{
 	text-align: center;
 	justify-content:center;
 	align-items: center;
-	width: auto;
+	width: 70%;
+	border: 2px solid black;
+	background-color: #512D1E;
+	color: white;
+	margin: 10px auto 10px auto;
+	padding: 5px;
 }
 
+.description{
+	font-size: 75%;
+	border: 2px solid black;
+	background-color: #8D633A;
+	color: white;
+	margin: 10px;
+}
+/*------------------YOUTUBE VIDEO-----------------*/
 
 iframe{
 	justify-content: center;
 	align-items: center;
 	margin:auto;
+	width: 75%;
+}
+
+/*-------------------SELF PROMOTION-------------*/
+#pub{
+	border: 3px dashed #512D1E;
+	padding: 3px;
 }
 
 
-
-#document{
-	justify-content: center;
-}
-
-.description{
-	font-size: 75%;
-}
-
+/*-------------------ANIMATION/REDUCED MOTION-------------*/
 @keyframes appear{
     from{opacity: 0;
   }
@@ -221,8 +250,8 @@ iframe{
     img{animation:none;}
 	#fullname{animation:none;}
 	#main{background-attachment: scroll;
-			background-size: cover;
-	}
+			background-size: cover;}
+	.flip-card-inner{transition: none;}	
   }
 
 /*Added this so the links stay the same color*/
@@ -230,9 +259,18 @@ a:before{color: white;}
 a:visited{color:white;
 	text-decoration: none;
 }
+/*------------------------------FLIP CARD--------------------------------*/
+#current-chap{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto;
+	margin: auto 15px;
+	grid-gap:10px 10px;
+}
+
 /*---------------------------------------------------DESKTOP---------------------------------------------------------------------------*/
 
-@media screen and (min-width: 850px){.grid-container{
+@media screen and (min-width: 1024px){.grid-container{
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: auto auto auto auto auto auto;
@@ -241,21 +279,27 @@ a:visited{color:white;
 	flex-direction: column;
 	}
 	
-	.row1{
+	#current-chap{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-template-rows: auto auto auto auto auto auto auto;
+	}
+	.fraternal-fathers{
 		display: inline-grid;
 		grid-template-columns: auto auto;
 		grid-template-rows: auto;
+		grid-gap: 10px;
 	}
 
 	#grid-item-fathers{
-		grid-row: 2;
+		grid-row: 3;
 		grid-column:1;
 	}
 
 	#grid-item-founders{
-		grid-row: 3;
+		grid-row: 4;
 		grid-column: 1;
-	}
+	} 
 	.grid-item.grid-pic{
 		justify-content: center;
 		margin: auto;
@@ -266,8 +310,96 @@ a:visited{color:white;
 		animation-name: appear;
 		animation-duration: 5s;
 		margin: auto;
+		height: 700px;
 	}
 	nav li{
 		width:auto;
 	}
+	.paragraph{
+		margin: 20px 40px;
+	}
+	body{
+		font-size: 200%;
+	}
+
+	.flip-card {
+		background-color: transparent;
+		width: auto;
+		height: auto;
+		perspective: 1000px;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	  }
+	  
+	  .flip-card-inner {
+		position: relative;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		transition: transform 0.6s;
+		transform-style: preserve-3d;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		margin: auto;
+	  }
+	  
+	 
+	  .flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
+		  transform: rotateY(180deg);
+		  width: auto;
+	  }
+
+	  .flip-card.focus-within .flip-card-inner{
+		  transform: rotateY(180deg);
+		  width: auto;
+	  }
+	  
+	  .flip-front, .flip-back {
+		position: absolute;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	  }
+	  
+	  .flip-front {
+		background-color: #bbb;
+		color: black;
+		width: 100%;
+		height: 100%;
+	  }
+	
+	  
+	  .flip-back {
+		transform: rotateY(180deg);
+		width: 100%;
+		height: 100%;
+	  }
+	  
+	  .flip-back p{
+		  width: 100%;
+		  height: 100%;
+		  margin: auto;
+		  font-size: 65%;
+		  border: none;
+	  }
+	  
+	  .fraternal-fathers{
+		  grid-row:2;
+	  }
+
+	  #upcard{
+		  width: 211.2px;
+		  height: 244.2px;
+	  }
+	  #chicard{
+		  width: 208.8px;
+		  height: 240.6px;
+	  }
+	  #phicard{
+		 width: 240px;
+		 height: 199.8px; 
+	  }
+	  #psicard{
+		 width: 197.4px;
+		 height: 227.4px; 
+	  }
 }
