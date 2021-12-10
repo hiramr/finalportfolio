@@ -15,7 +15,7 @@
 #fullname{
 	width: 500px;
 	height: auto;
-	animation-name: appears;
+	animation-name: grow;
 	animation-duration: 5s;
 	margin: 0%;
 	border: none;
@@ -240,7 +240,7 @@ iframe{
 
 
 /*-------------------ANIMATION/REDUCED MOTION-------------*/
-@keyframes appears{
+@keyframes grow{
     from{opacity: 0;
     width:0px;
   }
@@ -410,7 +410,7 @@ a:visited{color:white;
 		 width: 197.4px;
 		 height: 227.4px; 
 	  }
-	  @keyframes appears{
+	  @keyframes grow{
                  from{opacity: 0;
                  width:0px;
                  }
