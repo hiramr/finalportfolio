@@ -286,6 +286,7 @@ a:visited{color:white;
 	display:grid;
 	grid-template-columns: auto auto;
 	grid-template-rows: repeat(10, auto);
+	}}
 
 /*---------------------------------------------------DESKTOP---------------------------------------------------------------------------*/
 
