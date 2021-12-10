@@ -347,6 +347,22 @@ a:visited{color:white;
 		  font-size: 65%;
 		  border: none;
 	  }
+	 #upcard{
+		  width: 211.2px;
+		  height: 244.2px;
+	  }
+	  #chicard{
+		  width: 208.8px;
+		  height: 240.6px;
+	  }
+	  #phicard{
+		 width: 240px;
+		 height: 199.8px; 
+	  }
+	  #psicard{
+		 width: 197.4px;
+		 height: 227.4px; 
+	  }
 }
 
 /*---------------------------------------------------DESKTOP---------------------------------------------------------------------------*/
@@ -407,22 +423,7 @@ a:visited{color:white;
 		  grid-row:2;
 	  }
 
-	  #upcard{
-		  width: 211.2px;
-		  height: 244.2px;
-	  }
-	  #chicard{
-		  width: 208.8px;
-		  height: 240.6px;
-	  }
-	  #phicard{
-		 width: 240px;
-		 height: 199.8px; 
-	  }
-	  #psicard{
-		 width: 197.4px;
-		 height: 227.4px; 
-	  }
+	  
 	  @keyframes grow{
                  from{opacity: 0;
                  width:0px;
