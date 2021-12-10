@@ -287,6 +287,62 @@ a:visited{color:white;
 	grid-template-columns: auto auto;
 	grid-template-rows: repeat(10, auto); 
 	}
+}
+
+/*---------------------------------------------------DESKTOP---------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px){.grid-container{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-gap: 50px 50px;
+	justify-content: center;
+	flex-direction: column;
+	}
+	
+	#current-chap{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-template-rows: auto auto auto auto auto auto auto;
+	}
+	.fraternal-fathers{
+		display: inline-grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto;
+		grid-gap: 10px;
+	}
+
+	#grid-item-fathers{
+		grid-row: 3;
+		grid-column:1;
+	}
+
+	#grid-item-founders{
+		grid-row: 4;
+		grid-column: 1;
+	} 
+	.grid-item.grid-pic{
+		justify-content: center;
+		margin: auto;
+		align-items: center;
+	}
+	#iframe{
+		display:list-item;
+		animation-name: appear;
+		animation-duration: 5s;
+		margin: auto;
+		height: 700px;
+	}
+	nav li{
+		width:auto;
+	}
+	.paragraph{
+		margin: 20px 40px;
+	}
+	body{
+		font-size: 200%;
+	}
+	 
 	/*------------------------------FLIP CARD--------------------------------*/
 	.flip-card {
 		background-color: transparent;
@@ -363,62 +419,6 @@ a:visited{color:white;
 		 width: 197.4px;
 		 height: 227.4px; 
 	  }
-}
-
-/*---------------------------------------------------DESKTOP---------------------------------------------------------------------------*/
-
-@media screen and (min-width: 1024px){.grid-container{
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto auto auto auto auto auto;
-	grid-gap: 50px 50px;
-	justify-content: center;
-	flex-direction: column;
-	}
-	
-	#current-chap{
-		display: grid;
-		grid-template-columns: auto auto auto auto;
-		grid-template-rows: auto auto auto auto auto auto auto;
-	}
-	.fraternal-fathers{
-		display: inline-grid;
-		grid-template-columns: auto auto;
-		grid-template-rows: auto;
-		grid-gap: 10px;
-	}
-
-	#grid-item-fathers{
-		grid-row: 3;
-		grid-column:1;
-	}
-
-	#grid-item-founders{
-		grid-row: 4;
-		grid-column: 1;
-	} 
-	.grid-item.grid-pic{
-		justify-content: center;
-		margin: auto;
-		align-items: center;
-	}
-	#iframe{
-		display:list-item;
-		animation-name: appear;
-		animation-duration: 5s;
-		margin: auto;
-		height: 700px;
-	}
-	nav li{
-		width:auto;
-	}
-	.paragraph{
-		margin: 20px 40px;
-	}
-	body{
-		font-size: 200%;
-	}
-	  
 	  .fraternal-fathers{
 		  grid-row:2;
 	  }
