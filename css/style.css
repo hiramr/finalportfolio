@@ -234,15 +234,15 @@ iframe{
 
 /*-------------------SELF PROMOTION-------------*/
 .pub{
-	border: 3px dashed #512D1E;
+	border: 3px solid #512D1E;
 	padding: 3px;
-	color: #8D633A;
-	background-color: white;
+	color: white;
+	background-color: #8D633A;
 }
 
 .pub:hover{
-	background-color:blanchedalmond;
-	color: #8D633A;
+	background-color:#512D1E;
+	color: white;
 }
 
 /*-------------------ANIMATION/REDUCED MOTION-------------*/
