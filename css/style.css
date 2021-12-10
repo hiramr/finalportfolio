@@ -234,14 +234,14 @@ iframe{
 
 /*-------------------SELF PROMOTION-------------*/
 .pub{
-	border: 3px solid #512D1E;
+	border: 3px solid blanchedalmond;
 	padding: 3px;
 	background-color: #8D633A;
 }
 
 .pub:hover{
 	border: 3px solid blanchedalmond;
-	background-color: blue;
+	background-color: darkblue;
 }
 
 /*-------------------ANIMATION/REDUCED MOTION-------------*/
