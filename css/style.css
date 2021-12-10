@@ -281,6 +281,12 @@ a:visited{color:white;
 	grid-gap:10px 10px;
 }
 
+/*---------------------------------------------------TABLET---------------------------------------------------------------------------*/
+@media screen and (min-width: 768px){#current-chap{
+	display:grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: repeat(10, auto);
+
 /*---------------------------------------------------DESKTOP---------------------------------------------------------------------------*/
 
 @media screen and (min-width: 1024px){.grid-container{
