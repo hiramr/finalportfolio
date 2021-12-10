@@ -242,10 +242,10 @@ iframe{
 /*-------------------ANIMATION/REDUCED MOTION-------------*/
 @keyframes appear{
     from{opacity: 0;
-    width:0%;
+    width:0px;
   }
     to{opacity: 1;
-    width:100%;  
+    width:307px;  
   }
   }
   @media (prefers-reduced-motion: reduce) {
@@ -404,4 +404,12 @@ a:visited{color:white;
 		 width: 197.4px;
 		 height: 227.4px; 
 	  }
+	  @keyframes appear{
+                 from{opacity: 0;
+                 width:0px;
+                 }
+                  to{opacity: 1;
+                    width:500px;  
+                 }
+  }
 }
